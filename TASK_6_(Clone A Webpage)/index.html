@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NithyaKalyani CT - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Nithya<span>Kalyani</span></a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span class="burger"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Hi, I'm <span class="highlight">NithyaKalyani CT</span></h1>
+        <p>A passionate BE(CSE) student with interests in Web Development, Data, and Software Engineering.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">See My Projects</a>
+          <a class="btn ghost" href="#contact">Hire Me</a>
+        </div>
+      </div>
+
+      <div class="hero-preview">
+        <div class="profile-box">
+          <h3>Future Software Engineer</h3>
+          <p class="muted">Building creative & reliable solutions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I’m NithyaKalyani CT, currently pursuing BE(CSE). I enjoy solving real-world problems
+        through programming and web technologies. My goal is to grow into a software engineer
+        who can build impactful applications.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="features-grid">
+        <article class="feature">
+          <div class="icon">💻</div>
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript for interactive and responsive websites.</p>
+        </article>
+        <article class="feature">
+          <div class="icon">⚙</div>
+          <h3>Programming</h3>
+          <p>Core Java, Python, SQL and problem-solving with data structures.</p>
+        </article>
+        <article class="feature">
+          <div class="icon">📊</div>
+          <h3>Data Handling</h3>
+          <p>Experience with Excel, Google Sheets, and data cleansing techniques.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="cards-grid">
+        <div class="project-card">
+          <div class="project-image">🌐</div>
+          <h4>Job Board Website</h4>
+          <p>A personal Job Boardwebsite built with HTML, CSS, and JS.</p>
+          <a href="https://marguerite76214.preview.softr.app/?autoUser=true&show-toolbar=true" class="button">View</a> 
+        </div>
+
+
+        <div class="project-card">
+          <div class="project-image">🔒</div>
+          <h4>shopease-ui</h4>
+          <p>A Responsive and User friendly E-Commerce products showcase.</p>
+          <a href="https://github.com/Nithya05-developer/shopEase-ui" class="button">View</a> 
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">📱</div>
+          <h4>Simple Calci</h4>
+          <p>A simple,responsive calculator built using front end technologies .</p>
+          <a href="https://github.com/Nithya05-developer/Simple-calculator" class="button">View</a> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <h2 class="section-title">Get in Touch</h2>
+        <p>Interested in working together? Send me a message!</p>
+      </div>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <div class="form-row">
+          <button type="submit" class="btn primary">Send</button>
+          <button type="button" class="btn ghost" id="clearBtn">Clear</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> NithyaKalyani CT | Built with ❤ using HTML, CSS & JS</p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
